@@ -12,8 +12,8 @@ SoftwareSerial DebugSerial(RXpin, TXpin);
 SNIPE SNIPE(ATSerial);
 
 // WiFi 정보
-char ssid[] = "";
-char pass[] = "";
+char ssid[] = "wifi-id";
+char pass[] = "password";
 
 WiFiServer server(80);
 void setup() {
@@ -111,6 +111,6 @@ void loop() {
     client.print(F("<b>Bus leave!!</b>"));
   }
   // 유튜브 스트리밍 링크 제공
-  client.print(F("<br><br> <a href='https://www.youtube.com/watch?v=RW-7L_KMayo'>Bus staion CCTV link</a>"));
+  client.print(F("<br><br> <a href='유튜브링크'>Bus staion CCTV link</a>"));
   client.print(F("</html>"));
 }
