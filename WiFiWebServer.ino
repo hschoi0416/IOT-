@@ -12,8 +12,8 @@ SoftwareSerial DebugSerial(RXpin, TXpin);
 SNIPE SNIPE(ATSerial);
 
 // WiFi 정보
-char ssid[] = "";
-char pass[] = "";
+char ssid[] = "wifi-ssid";
+char pass[] = "password";
 
 WiFiServer server(80);
 void setup() {
